@@ -2,6 +2,8 @@ package inno.escape.moviebackend.domain.boxoffice.controller;
 
 import inno.escape.moviebackend.domain.boxoffice.dto.DailyBoxOfficeRequestDto;
 import inno.escape.moviebackend.domain.boxoffice.dto.DailyBoxOfficeResponseDto;
+import inno.escape.moviebackend.domain.boxoffice.dto.WeeklyBoxOfficeRequestDto;
+import inno.escape.moviebackend.domain.boxoffice.dto.WeeklyBoxOfficeResponseDto;
 import javax.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.MediaType;
@@ -23,7 +25,6 @@ public class BoxOfficeController {
   public Mono<DailyBoxOfficeResponseDto> getDailyBoxOffice(
       @RequestBody @Valid DailyBoxOfficeRequestDto dto) {
 
-    // @Todo uriBuilder(path, dto) 구현 필요
     return webClient.get()
         .uri(uriBuilder -> uriBuilder
             .path("/boxoffice/searchDailyBoxOfficeList.json")
@@ -37,5 +38,25 @@ public class BoxOfficeController {
         .accept(MediaType.APPLICATION_JSON)
         .retrieve()
         .bodyToMono(DailyBoxOfficeResponseDto.class);
+  }
+
+  @GetMapping("/weekly")
+  public Mono<WeeklyBoxOfficeResponseDto> getWeeklyBoxOffice(
+      @RequestBody @Valid WeeklyBoxOfficeRequestDto dto) {
+
+    return webClient.get()
+        .uri(uriBuilder -> uriBuilder
+            .path("/boxoffice/searchWeeklyBoxOfficeList.json")
+            .queryParam("key", dto.getKey())
+            .queryParam("targetDt", dto.getTargetDt())
+            .queryParam("weekGb", dto.getWeekGb())
+            .queryParam("itemPerPage", dto.getItemPerPage())
+            .queryParam("multiMovieYn", dto.getMultiMovieYn())
+            .queryParam("repNationCd", dto.getRepNationCd())
+            .queryParam("wideAreaCd", dto.getWideAreaCd())
+            .build())
+        .accept(MediaType.APPLICATION_JSON)
+        .retrieve()
+        .bodyToMono(WeeklyBoxOfficeResponseDto.class);
   }
 }
