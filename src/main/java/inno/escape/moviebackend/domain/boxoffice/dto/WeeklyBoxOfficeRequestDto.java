@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Data
-public class DailyBoxOfficeRequestDto implements Serializable {
+public class WeeklyBoxOfficeRequestDto implements Serializable {
 
   @NotBlank(message = "발급받은 키 값을 입력해주세요.")
   private String key;
@@ -21,6 +21,9 @@ public class DailyBoxOfficeRequestDto implements Serializable {
   @Pattern(regexp = "((19|20)\\d{2}(0[1-9]|1[0-2])(0[1-9]|[12]\\d|3[01]))", message = "조회하고자 하는 날짜를 yyyymmdd 형식으로 입력해주세요.")
   @NotBlank(message = "조회하고자 하는 날짜를 입력해주세요.")
   private String targetDt;
+
+  // 0 주간(월~일) / default 1 주말(금~일) / 2 주중(월~목)
+  private String weekGb;
 
   // default 10 / max 10
   private String itemPerPage;
