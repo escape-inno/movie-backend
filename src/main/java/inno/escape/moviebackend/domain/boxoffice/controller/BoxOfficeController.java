@@ -17,7 +17,7 @@ import reactor.core.publisher.Mono;
 
 @RequiredArgsConstructor
 @RestController
-@RequestMapping("/boxoffice")
+@RequestMapping("/boxoffices")
 public class BoxOfficeController {
 
   private final BoxOfficeService boxOfficeService;
