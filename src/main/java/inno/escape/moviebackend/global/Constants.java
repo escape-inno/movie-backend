@@ -4,7 +4,9 @@ public class Constants {
 
   public enum URL_PATH {
     DAILY("/boxoffice/searchDailyBoxOfficeList.json"),
-    WEEKLY("/boxoffice/searchWeeklyBoxOfficeList.json");
+    WEEKLY("/boxoffice/searchWeeklyBoxOfficeList.json"),
+    COMPANY_LIST("/company/searchCompanyList.json"),
+    COMPANY_INFO("/company/searchCompanyInfo.json");
 
     String value;
 
