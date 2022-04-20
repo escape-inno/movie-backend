@@ -1,5 +1,6 @@
-package inno.escape.moviebackend.domain.boxoffice.dto;
+package inno.escape.moviebackend.domain.boxoffice.dto.daily;
 
+import inno.escape.moviebackend.domain.boxoffice.dto.BoxOfficeResult;
 import java.io.Serializable;
 import java.util.List;
 import lombok.AccessLevel;

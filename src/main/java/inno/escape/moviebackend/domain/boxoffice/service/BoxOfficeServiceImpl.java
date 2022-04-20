@@ -1,10 +1,10 @@
 package inno.escape.moviebackend.domain.boxoffice.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import inno.escape.moviebackend.domain.boxoffice.dto.DailyBoxOfficeRequestDto;
-import inno.escape.moviebackend.domain.boxoffice.dto.DailyBoxOfficeResponseDto;
-import inno.escape.moviebackend.domain.boxoffice.dto.WeeklyBoxOfficeRequestDto;
-import inno.escape.moviebackend.domain.boxoffice.dto.WeeklyBoxOfficeResponseDto;
+import inno.escape.moviebackend.domain.boxoffice.dto.daily.DailyBoxOfficeRequestDto;
+import inno.escape.moviebackend.domain.boxoffice.dto.daily.DailyBoxOfficeResponseDto;
+import inno.escape.moviebackend.domain.boxoffice.dto.weekly.WeeklyBoxOfficeRequestDto;
+import inno.escape.moviebackend.domain.boxoffice.dto.weekly.WeeklyBoxOfficeResponseDto;
 import inno.escape.moviebackend.global.Constants.URL_PATH;
 import inno.escape.moviebackend.global.util.MultiValueMapUtil;
 import lombok.RequiredArgsConstructor;
