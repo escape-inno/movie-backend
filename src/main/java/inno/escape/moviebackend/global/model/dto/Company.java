@@ -1,9 +1,6 @@
-package inno.escape.moviebackend.domain.company.dto.info;
+package inno.escape.moviebackend.global.model.dto;
 
-import inno.escape.moviebackend.global.model.dto.Filmo;
-import inno.escape.moviebackend.global.model.dto.Part;
 import java.io.Serializable;
-import java.util.List;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -14,7 +11,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Data
-public class CompanyInfo implements Serializable {
+public class Company implements Serializable {
 
   private String companyCd;
 
@@ -22,9 +19,5 @@ public class CompanyInfo implements Serializable {
 
   private String companyNmEn;
 
-  private String ceoNm;
-
-  private List<Part> parts;
-
-  private List<Filmo> filmos;
+  private String companyPartNm;
 }

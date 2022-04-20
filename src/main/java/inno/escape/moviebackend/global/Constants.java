@@ -6,7 +6,9 @@ public class Constants {
     DAILY("/boxoffice/searchDailyBoxOfficeList.json"),
     WEEKLY("/boxoffice/searchWeeklyBoxOfficeList.json"),
     COMPANY_LIST("/company/searchCompanyList.json"),
-    COMPANY_INFO("/company/searchCompanyInfo.json");
+    COMPANY_INFO("/company/searchCompanyInfo.json"),
+    MOVIE_LIST("/movie/searchMovieList.json"),
+    MOVIE_INFO("/movie/searchMovieInfo.json");
 
     String value;
 
