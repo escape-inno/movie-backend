@@ -1,4 +1,4 @@
-package inno.escape.moviebackend.domain.company.dto.info;
+package inno.escape.moviebackend.global.model.dto;
 
 import java.io.Serializable;
 import lombok.AccessLevel;
