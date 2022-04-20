@@ -1,4 +1,4 @@
-package inno.escape.moviebackend.domain.boxoffice.dto;
+package inno.escape.moviebackend.domain.boxoffice.dto.weekly;
 
 import java.io.Serializable;
 import lombok.AccessLevel;
@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Data
-public class DailyBoxOfficeResponseDto implements Serializable {
+public class WeeklyBoxOfficeResponseDto implements Serializable {
 
-  private DailyBoxOfficeResult boxOfficeResult;
+  private WeeklyBoxOfficeResult boxOfficeResult;
 }

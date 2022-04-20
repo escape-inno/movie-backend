@@ -1,4 +1,4 @@
-package inno.escape.moviebackend.domain.boxoffice.dto;
+package inno.escape.moviebackend.domain.company.dto.info;
 
 import java.io.Serializable;
 import lombok.AccessLevel;
@@ -11,7 +11,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Data
-public class WeeklyBoxOfficeResponseDto implements Serializable {
+public class CompanyInfoResult implements Serializable {
 
-  private WeeklyBoxOfficeResult boxOfficeResult;
+  private CompanyInfo companyInfo;
+
+  private String source;
 }

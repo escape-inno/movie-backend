@@ -1,1 +1,3 @@
-
+logging:
+  level:
+    inno.escape.moviebackend: debug

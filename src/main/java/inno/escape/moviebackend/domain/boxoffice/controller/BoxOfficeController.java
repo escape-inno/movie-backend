@@ -1,9 +1,9 @@
 package inno.escape.moviebackend.domain.boxoffice.controller;
 
-import inno.escape.moviebackend.domain.boxoffice.dto.DailyBoxOfficeRequestDto;
-import inno.escape.moviebackend.domain.boxoffice.dto.DailyBoxOfficeResponseDto;
-import inno.escape.moviebackend.domain.boxoffice.dto.WeeklyBoxOfficeRequestDto;
-import inno.escape.moviebackend.domain.boxoffice.dto.WeeklyBoxOfficeResponseDto;
+import inno.escape.moviebackend.domain.boxoffice.dto.daily.DailyBoxOfficeRequestDto;
+import inno.escape.moviebackend.domain.boxoffice.dto.daily.DailyBoxOfficeResponseDto;
+import inno.escape.moviebackend.domain.boxoffice.dto.weekly.WeeklyBoxOfficeRequestDto;
+import inno.escape.moviebackend.domain.boxoffice.dto.weekly.WeeklyBoxOfficeResponseDto;
 import inno.escape.moviebackend.domain.boxoffice.service.BoxOfficeService;
 import javax.validation.Valid;
 import lombok.RequiredArgsConstructor;
