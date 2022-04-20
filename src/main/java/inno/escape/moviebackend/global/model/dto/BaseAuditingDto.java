@@ -14,6 +14,8 @@ import lombok.experimental.SuperBuilder;
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class BaseAuditingDto implements Serializable {
 
+  private static final long serialVersionUID = -4802793899089500962L;
+
   protected String id;
 
   protected Timestamp createdAt;

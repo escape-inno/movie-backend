@@ -14,6 +14,8 @@ import lombok.NoArgsConstructor;
 @Data
 public class CompanyListRequestDto implements Serializable {
 
+  private static final long serialVersionUID = -363489661227034389L;
+
   @NotBlank(message = "발급받은 키 값을 입력해주세요.")
   private String key;
 

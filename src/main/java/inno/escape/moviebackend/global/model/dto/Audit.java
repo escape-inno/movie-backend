@@ -13,6 +13,8 @@ import lombok.NoArgsConstructor;
 @Data
 public class Audit implements Serializable {
 
+  private static final long serialVersionUID = -2894116262379544856L;
+
   private String auditNo;
 
   private String watchGrandeNm;

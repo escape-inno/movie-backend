@@ -16,6 +16,8 @@ import lombok.NoArgsConstructor;
 @Data
 public class MovieList implements Serializable {
 
+  private static final long serialVersionUID = 5658105501986448664L;
+
   private String movieCd;
 
   private String movieNm;

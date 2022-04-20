@@ -14,6 +14,8 @@ import lombok.NoArgsConstructor;
 @Data
 public class MovieListResult implements Serializable {
 
+  private static final long serialVersionUID = 632577278072469174L;
+
   private int totCnt;
 
   private String source;

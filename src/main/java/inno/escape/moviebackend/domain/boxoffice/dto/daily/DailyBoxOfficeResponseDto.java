@@ -13,5 +13,7 @@ import lombok.NoArgsConstructor;
 @Data
 public class DailyBoxOfficeResponseDto implements Serializable {
 
+  private static final long serialVersionUID = 5723722838407269807L;
+
   private DailyBoxOfficeResult boxOfficeResult;
 }

@@ -13,6 +13,8 @@ import lombok.NoArgsConstructor;
 @Data
 public class BoxOfficeResult implements Serializable {
 
+  private static final long serialVersionUID = 8446102317673471251L;
+
   private String rnum;
 
   private String rank;

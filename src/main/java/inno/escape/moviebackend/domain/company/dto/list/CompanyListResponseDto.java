@@ -13,5 +13,7 @@ import lombok.NoArgsConstructor;
 @Data
 public class CompanyListResponseDto implements Serializable {
 
+  private static final long serialVersionUID = -160995329994552262L;
+
   private CompanyListResult companyListResult;
 }

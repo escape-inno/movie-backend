@@ -13,6 +13,8 @@ import lombok.NoArgsConstructor;
 @Data
 public class Director implements Serializable {
 
+  private static final long serialVersionUID = 659751890165584695L;
+
   private String peopleNm;
 
   private String peopleNmEn;

@@ -14,6 +14,8 @@ import lombok.NoArgsConstructor;
 @Data
 public class MovieListRequestDto implements Serializable {
 
+  private static final long serialVersionUID = -4198536769884107491L;
+
   @NotBlank(message = "발급받은 키 값을 입력해주세요.")
   private String key;
 

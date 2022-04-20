@@ -13,6 +13,8 @@ import lombok.NoArgsConstructor;
 @Data
 public class Genre implements Serializable {
 
+  private static final long serialVersionUID = -8848202206185624551L;
+
   private String genreNm;
 
   private String genreNmEn;

@@ -13,6 +13,8 @@ import lombok.NoArgsConstructor;
 @Data
 public class MovieInfoResult implements Serializable {
 
+  private static final long serialVersionUID = -78425244704097601L;
+
   private MovieInfo movieInfo;
 
   private String source;

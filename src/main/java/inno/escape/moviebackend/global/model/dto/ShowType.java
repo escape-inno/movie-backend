@@ -13,6 +13,8 @@ import lombok.NoArgsConstructor;
 @Data
 public class ShowType implements Serializable {
 
+  private static final long serialVersionUID = -3550995663216297158L;
+
   private String showTypeGroupNm;
 
   private String showTypeNm;

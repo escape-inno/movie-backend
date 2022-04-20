@@ -15,6 +15,8 @@ import lombok.NoArgsConstructor;
 @Data
 public class WeeklyBoxOfficeResult implements Serializable {
 
+  private static final long serialVersionUID = 2447724662597615574L;
+
   private String boxofficeType;
 
   private String showRange;

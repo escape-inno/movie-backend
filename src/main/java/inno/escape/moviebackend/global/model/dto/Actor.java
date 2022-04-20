@@ -13,6 +13,8 @@ import lombok.NoArgsConstructor;
 @Data
 public class Actor implements Serializable {
 
+  private static final long serialVersionUID = -3129364442384658519L;
+
   private String peopleNm;
 
   private String peopleNmEn;

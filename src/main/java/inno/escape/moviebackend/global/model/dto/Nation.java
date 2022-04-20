@@ -13,6 +13,8 @@ import lombok.NoArgsConstructor;
 @Data
 public class Nation implements Serializable {
 
+  private static final long serialVersionUID = -4061994493958405357L;
+
   private String nationNm;
 
   private String nationNmEn;

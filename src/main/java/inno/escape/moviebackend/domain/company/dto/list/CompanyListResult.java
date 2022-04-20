@@ -14,6 +14,8 @@ import lombok.NoArgsConstructor;
 @Data
 public class CompanyListResult implements Serializable {
 
+  private static final long serialVersionUID = 2668976868106688034L;
+
   private int totCnt;
 
   private List<CompanyList> companyList;
