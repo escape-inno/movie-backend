@@ -9,8 +9,8 @@ public class Constants {
     COMPANY_INFO("/company/searchCompanyInfo.json"),
     MOVIE_LIST("/movie/searchMovieList.json"),
     MOVIE_INFO("/movie/searchMovieInfo.json"),
-    MOVIE_PERSON_LIST("/people/searchPeopleInfoList.json"),
-    MOVIE_PERSON_INFO("/eople/searchPeopleInfo.json");
+    MOVIE_PEOPLE_LIST("/people/searchPeopleInfoList.json"),
+    MOVIE_PEOPLE_INFO("/eople/searchPeopleInfo.json");
 
     String value;
 

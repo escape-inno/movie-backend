@@ -1,10 +1,11 @@
-package inno.escape.moviebatch.domain.boxoffice.service;
+package inno.escape.moviebatch.domain.boxoffice.service.impl;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import inno.escape.moviebatch.domain.boxoffice.dto.daily.DailyBoxOfficeRequestDto;
 import inno.escape.moviebatch.domain.boxoffice.dto.daily.DailyBoxOfficeResponseDto;
 import inno.escape.moviebatch.domain.boxoffice.dto.weekly.WeeklyBoxOfficeRequestDto;
 import inno.escape.moviebatch.domain.boxoffice.dto.weekly.WeeklyBoxOfficeResponseDto;
+import inno.escape.moviebatch.domain.boxoffice.service.BoxOfficeService;
 import inno.escape.moviebatch.global.Constants.URL_PATH;
 import inno.escape.moviebatch.global.util.MultiValueMapUtil;
 import inno.escape.moviebatch.global.util.WebClientUtil;
