@@ -17,7 +17,7 @@ import reactor.core.publisher.Mono;
 
 @RequiredArgsConstructor
 @RestController
-@RequestMapping("/companies")
+@RequestMapping("/company")
 public class CompanyController {
 
   private final CompanyService companyService;

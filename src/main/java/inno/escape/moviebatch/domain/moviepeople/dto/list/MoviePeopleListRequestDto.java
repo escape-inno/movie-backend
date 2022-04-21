@@ -1,14 +1,18 @@
-package inno.escape.moviebatch.domain.movieperson.dto.list;
+package inno.escape.moviebatch.domain.moviepeople.dto.list;
 
-import lombok.*;
-import javax.validation.constraints.NotBlank;
 import java.io.Serializable;
+import javax.validation.constraints.NotBlank;
+import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Data
-public class MoviePersonListRequestDto implements Serializable {
+public class MoviePeopleListRequestDto implements Serializable {
 
     private static final long serialVersionUID = -1981516704041624202L;
 
