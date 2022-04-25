@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Data
-public class MoviePeopleList implements Serializable {
+public class PeopleList implements Serializable {
 
     private static final long serialVersionUID = -84096862024754819L;
 

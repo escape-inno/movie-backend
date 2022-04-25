@@ -11,12 +11,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Data
-public class MoviePeopleInfo implements Serializable {
+public class PeopleInfoResponseDto implements Serializable {
 
-    private static final long serialVersionUID = -84096862024754819L;
+    private static final long serialVersionUID = 4432316270593532344L;
 
-    private String key;
-
-    private String peopleCd;
-
+    private PeopleInfoResult peopleInfoResult;
 }

@@ -1,6 +1,8 @@
 package inno.escape.moviebatch.domain.moviepeople.dto.list;
 
 import java.io.Serializable;
+import java.util.List;
+
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,18 +13,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Data
-public class MoviePeopleListResponseDto implements Serializable {
+public class PeopleListResponseDto implements Serializable {
 
-    private static final long serialVersionUID = 3368883395197321767L;
+    private static final long serialVersionUID = -878314240138081295L;
 
-    private String peopleCd;
-
-    private String peopleNm;
-
-    private String peopleNmEn;
-
-    private String repRoleNm;
-
-    private String filmoNames;
+    private PeopleListResult peopleListResult;
 
 }
