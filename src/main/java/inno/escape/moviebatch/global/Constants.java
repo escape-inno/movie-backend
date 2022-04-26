@@ -38,4 +38,8 @@ public class Constants {
       return value;
     }
   }
+
+  public enum AGE_LIMIT {
+
+  }
 }

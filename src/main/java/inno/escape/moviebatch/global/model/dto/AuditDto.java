@@ -3,23 +3,17 @@ package inno.escape.moviebatch.global.model.dto;
 import java.io.Serializable;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Builder
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Data
-public class Company implements Serializable {
+public class AuditDto implements Serializable {
 
-  private static final long serialVersionUID = -5244357870496464861L;
+  private static final long serialVersionUID = -2894116262379544856L;
 
-  private String companyCd;
+  private String auditNo;
 
-  private String companyNm;
-
-  private String companyNmEn;
-
-  private String companyPartNm;
+  private String watchGrandeNm;
 }
