@@ -1,4 +1,4 @@
-package inno.escape.moviebatch.domain.moviepeople.dto.list;
+package inno.escape.moviebatch.domain.people.dto.list;
 
 import lombok.*;
 
