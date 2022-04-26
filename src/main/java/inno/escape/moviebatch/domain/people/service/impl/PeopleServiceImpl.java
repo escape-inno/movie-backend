@@ -1,12 +1,11 @@
-package inno.escape.moviebatch.domain.moviepeople.service.impl;
+package inno.escape.moviebatch.domain.people.service.impl;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import inno.escape.moviebatch.domain.moviepeople.dto.info.PeopleInfoRequestDto;
-import inno.escape.moviebatch.domain.moviepeople.dto.info.PeopleInfoResponseDto;
-import inno.escape.moviebatch.domain.moviepeople.dto.info.PeopleInfoResult;
-import inno.escape.moviebatch.domain.moviepeople.dto.list.PeopleListRequestDto;
-import inno.escape.moviebatch.domain.moviepeople.dto.list.PeopleListResponseDto;
-import inno.escape.moviebatch.domain.moviepeople.service.PeopleService;
+import inno.escape.moviebatch.domain.people.dto.info.PeopleInfoRequestDto;
+import inno.escape.moviebatch.domain.people.dto.info.PeopleInfoResponseDto;
+import inno.escape.moviebatch.domain.people.dto.list.PeopleListRequestDto;
+import inno.escape.moviebatch.domain.people.dto.list.PeopleListResponseDto;
+import inno.escape.moviebatch.domain.people.service.PeopleService;
 import inno.escape.moviebatch.global.Constants;
 import inno.escape.moviebatch.global.util.MultiValueMapUtil;
 import inno.escape.moviebatch.global.util.WebClientUtil;

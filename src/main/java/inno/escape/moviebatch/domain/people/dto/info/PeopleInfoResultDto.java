@@ -1,4 +1,4 @@
-package inno.escape.moviebatch.domain.moviepeople.dto.info;
+package inno.escape.moviebatch.domain.people.dto.info;
 
 import java.io.Serializable;
 import lombok.AccessLevel;
@@ -9,12 +9,12 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Data
-public class PeopleInfoResult implements Serializable {
+public class PeopleInfoResultDto implements Serializable {
 
     private static final long serialVersionUID = -4434178124999492606L;
 
     private String source;
 
-    private PeopleInfo peopleInfo;
+    private PeopleInfoDto peopleInfo;
 
 }

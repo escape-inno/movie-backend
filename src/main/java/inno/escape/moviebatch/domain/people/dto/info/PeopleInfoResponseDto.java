@@ -1,4 +1,4 @@
-package inno.escape.moviebatch.domain.moviepeople.dto.info;
+package inno.escape.moviebatch.domain.people.dto.info;
 
 import java.io.Serializable;
 import lombok.AccessLevel;
@@ -13,5 +13,5 @@ public class PeopleInfoResponseDto implements Serializable {
 
     private static final long serialVersionUID = 4432316270593532344L;
 
-    private PeopleInfoResult peopleInfoResult;
+    private PeopleInfoResultDto peopleInfoResult;
 }

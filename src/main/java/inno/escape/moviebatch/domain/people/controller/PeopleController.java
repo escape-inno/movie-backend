@@ -1,11 +1,10 @@
-package inno.escape.moviebatch.domain.moviepeople.controller;
+package inno.escape.moviebatch.domain.people.controller;
 
-import inno.escape.moviebatch.domain.moviepeople.dto.info.PeopleInfoRequestDto;
-import inno.escape.moviebatch.domain.moviepeople.dto.info.PeopleInfoResponseDto;
-import inno.escape.moviebatch.domain.moviepeople.dto.info.PeopleInfoResult;
-import inno.escape.moviebatch.domain.moviepeople.dto.list.PeopleListRequestDto;
-import inno.escape.moviebatch.domain.moviepeople.dto.list.PeopleListResponseDto;
-import inno.escape.moviebatch.domain.moviepeople.service.PeopleService;
+import inno.escape.moviebatch.domain.people.dto.info.PeopleInfoRequestDto;
+import inno.escape.moviebatch.domain.people.dto.info.PeopleInfoResponseDto;
+import inno.escape.moviebatch.domain.people.dto.list.PeopleListRequestDto;
+import inno.escape.moviebatch.domain.people.dto.list.PeopleListResponseDto;
+import inno.escape.moviebatch.domain.people.service.PeopleService;
 import javax.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

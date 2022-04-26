@@ -1,4 +1,4 @@
-package inno.escape.moviebatch.domain.moviepeople.dto.info;
+package inno.escape.moviebatch.domain.people.dto.info;
 
 import java.io.Serializable;
 import javax.validation.constraints.NotBlank;
