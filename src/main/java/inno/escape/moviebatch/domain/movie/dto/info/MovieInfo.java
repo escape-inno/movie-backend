@@ -1,22 +1,20 @@
 package inno.escape.moviebatch.domain.movie.dto.info;
 
-import inno.escape.moviebatch.global.model.dto.Actor;
-import inno.escape.moviebatch.global.model.dto.Audit;
-import inno.escape.moviebatch.global.model.dto.Company;
-import inno.escape.moviebatch.global.model.dto.Director;
-import inno.escape.moviebatch.global.model.dto.Genre;
-import inno.escape.moviebatch.global.model.dto.Nation;
-import inno.escape.moviebatch.global.model.dto.ShowType;
-import inno.escape.moviebatch.global.model.dto.Staff;
+import inno.escape.moviebatch.global.model.dto.ActorDto;
+import inno.escape.moviebatch.global.model.dto.AuditDto;
+import inno.escape.moviebatch.global.model.dto.CompanyDto;
+import inno.escape.moviebatch.global.model.dto.DirectorDto;
+import inno.escape.moviebatch.global.model.dto.GenreDto;
+import inno.escape.moviebatch.global.model.dto.NationDto;
+import inno.escape.moviebatch.global.model.dto.ShowTypeDto;
+import inno.escape.moviebatch.global.model.dto.StaffDto;
 import java.io.Serializable;
 import java.util.List;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Builder
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Data
@@ -42,19 +40,19 @@ public class MovieInfo implements Serializable {
 
   private String typeNm;
 
-  private List<Nation> nations;
+  private List<NationDto> nations;
 
-  private List<Genre> genres;
+  private List<GenreDto> genres;
 
-  private List<Director> directors;
+  private List<DirectorDto> directors;
 
-  private List<Actor> actors;
+  private List<ActorDto> actors;
 
-  private List<ShowType> showTypes;
+  private List<ShowTypeDto> showTypes;
 
-  private List<Company> companys;
+  private List<CompanyDto> companys;
 
-  private List<Audit> audits;
+  private List<AuditDto> audits;
 
-  private List<Staff> staffs;
+  private List<StaffDto> staffs;
 }

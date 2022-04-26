@@ -1,10 +1,11 @@
 package inno.escape.moviebatch.domain.moviepeople.dto.info;
 
-import lombok.*;
-
 import java.io.Serializable;
+import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-@Builder
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Data

@@ -1,16 +1,14 @@
 package inno.escape.moviebatch.domain.movie.dto.list;
 
-import inno.escape.moviebatch.global.model.dto.Company;
-import inno.escape.moviebatch.global.model.dto.Director;
+import inno.escape.moviebatch.global.model.dto.CompanyDto;
+import inno.escape.moviebatch.global.model.dto.DirectorDto;
 import java.io.Serializable;
 import java.util.List;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Builder
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Data
@@ -40,8 +38,8 @@ public class MovieList implements Serializable {
 
   private String repGenreNm;
 
-  private List<Director> directors;
+  private List<DirectorDto> directors;
 
-  private List<Company> companys;
+  private List<CompanyDto> companys;
 }
 
