@@ -1,3 +1,13 @@
+server:
+  port: 8080
+
+spring:
+  profiles:
+    include:
+    active: local
+  application:
+    name: movie-batch
+
 logging:
   level:
     inno.escape.moviebatch: debug
