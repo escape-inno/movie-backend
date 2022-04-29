@@ -7,6 +7,9 @@ spring:
     active: local
   application:
     name: movie-batch
+  batch:
+    job:
+      enabled: false
 
 logging:
   level:

@@ -2,6 +2,8 @@ package inno.escape.moviebatch.global;
 
 public class Constants {
 
+  public static String KEY = "080e71fbd553e9fc1892ff503a4a9dd2";
+
   public enum URL_PATH {
     DAILY("/boxoffice/searchDailyBoxOfficeList.json"),
     WEEKLY("/boxoffice/searchWeeklyBoxOfficeList.json"),
