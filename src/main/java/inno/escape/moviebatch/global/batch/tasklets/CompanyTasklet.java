@@ -17,6 +17,7 @@ import reactor.core.publisher.Mono;
 public class CompanyTasklet implements Tasklet {
 
   private final CompanyService companyService;
+  private int page = 1;
 
   @Override
   public RepeatStatus execute(StepContribution contribution, ChunkContext chunkContext) {
@@ -24,12 +25,12 @@ public class CompanyTasklet implements Tasklet {
 
     CompanyListRequestDto dto = CompanyListRequestDto.builder()
         .key(Constants.KEY)
+        .curPage(Integer.toString(page))
         .build();
+    page += 1;
 
     Mono<CompanyListResponseDto> companyListResponseDtoMono = companyService.getCompanies(dto);
     companyListResponseDtoMono.subscribe(System.out::println);
-
-    // @TODO Mono dto 를 db 에 저장하는 작업 추가
 
     return RepeatStatus.FINISHED;
   }

@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 @Entity(name = "company")
 public class Company extends BaseAuditingEntity {
 
-  @Column(name = "code")
+  @Column(name = "code", unique = true)
   private String code;
 
   @Column(name = "korea_name")
