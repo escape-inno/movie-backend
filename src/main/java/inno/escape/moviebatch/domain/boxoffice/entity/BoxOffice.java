@@ -1,7 +1,6 @@
 package inno.escape.moviebatch.domain.boxoffice.entity;
 
 import inno.escape.moviebatch.global.model.entity.BaseAuditingEntity;
-import java.sql.Timestamp;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
@@ -27,5 +26,5 @@ public class BoxOffice extends BaseAuditingEntity {
   private int ranking;
 
   @Column(name = "ranked_date")
-  protected Timestamp rankedDate;
+  private String rankedDate;
 }
