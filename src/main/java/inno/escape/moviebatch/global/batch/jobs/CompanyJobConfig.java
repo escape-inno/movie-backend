@@ -19,14 +19,14 @@ public class CompanyJobConfig {
 
   private final CompanyService companyService;
 
-  @Bean
+  @Bean(name = "companyJob")
   public Job companyJob() {
     return jobBuilderFactory.get("companyJob")
         .start(companyStep())
         .build();
   }
 
-  @Bean
+  @Bean(name = "companyStep")
   public Step companyStep() {
     return stepBuilderFactory.get("companyStep")
         .tasklet(new CompanyTasklet(companyService))

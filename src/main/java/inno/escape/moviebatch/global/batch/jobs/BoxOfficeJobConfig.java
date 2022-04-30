@@ -19,15 +19,15 @@ public class BoxOfficeJobConfig {
 
   private final BoxOfficeService boxOfficeService;
 
-  @Bean
-  public Job companyJob() {
+  @Bean(name = "boxOfficeJob")
+  public Job boxOfficeJob() {
     return jobBuilderFactory.get("boxOfficeJob")
-        .start(companyStep())
+        .start(boxOfficeStep())
         .build();
   }
 
-  @Bean
-  public Step companyStep() {
+  @Bean(name = "boxOfficeStep")
+  public Step boxOfficeStep() {
     return stepBuilderFactory.get("boxOfficeStep")
         .tasklet(new BoxOfficeTasklet(boxOfficeService))
         .build();
