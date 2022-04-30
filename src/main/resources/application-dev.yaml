@@ -11,3 +11,6 @@ spring:
   config:
     activate:
       on-profile: dev
+  batch:
+    jdbc:
+      initialize-schema: always
