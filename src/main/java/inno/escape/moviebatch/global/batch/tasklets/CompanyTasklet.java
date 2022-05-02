@@ -23,15 +23,9 @@ public class CompanyTasklet implements Tasklet {
 
     CompanyListRequestDto dto = CompanyListRequestDto.builder()
         .key(Constants.KEY)
-<<<<<<< master
         .curPage(Integer.toString(page))
-=======
-<<<<<<< HEAD
-=======
         .curPage(Integer.toString(page))
         .itemPerPage(Integer.toString(100))
->>>>>>> 1f4203b... feat: batch 스케쥴러, 테스크 설정
->>>>>>> feat: batch 스케쥴러, 테스크 설정
         .build();
     page += 1;
 
