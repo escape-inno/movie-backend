@@ -1,5 +1,6 @@
 package inno.escape.moviebatch.domain.boxoffice.entity;
 
+import inno.escape.moviebatch.domain.movie.entity.Movie;
 import inno.escape.moviebatch.global.model.entity.BaseAuditingEntity;
 import javax.persistence.Column;
 import javax.persistence.Entity;

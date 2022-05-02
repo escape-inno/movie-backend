@@ -11,6 +11,8 @@ import inno.escape.moviebatch.domain.boxoffice.entity.BoxOffice;
 import inno.escape.moviebatch.domain.boxoffice.mapper.BoxOfficeMapper;
 import inno.escape.moviebatch.domain.boxoffice.repository.BoxOfficeRepository;
 import inno.escape.moviebatch.domain.boxoffice.service.BoxOfficeService;
+import inno.escape.moviebatch.domain.movie.entity.Movie;
+import inno.escape.moviebatch.domain.movie.repository.MovieRepository;
 import inno.escape.moviebatch.global.Constants.URL_PATH;
 import inno.escape.moviebatch.global.util.MultiValueMapUtil;
 import inno.escape.moviebatch.global.util.WebClientUtil;
