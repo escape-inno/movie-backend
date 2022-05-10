@@ -7,11 +7,10 @@ import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
+import javax.persistence.*;
+import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
@@ -19,13 +18,9 @@ import javax.persistence.OneToOne;
 @Entity(name = "movie")
 public class Movie extends BaseAuditingEntity {
 
-    @OneToOne
-    @JoinColumn(name = "director_id")
-    private People people;
-
-    @OneToOne
-    @JoinColumn(name = "company_id")
-    private Company company;
+    @Id
+    @Column(name = "id", columnDefinition = "VARCHAR(36)", updatable = false, nullable = false)
+    private String id;
 
     @Column(name = "code")
     private String code;
@@ -42,9 +37,6 @@ public class Movie extends BaseAuditingEntity {
     @Column(name = "year")
     private int year;
 
-    @Column(name = "genre")
-    private String genre;
-
-    @Column(name = "motion_picture_rating_system")
-    private String motionPictureRatingSystem;
+    @Column(name = "age_limit")
+    private String ageLimit; //
 }

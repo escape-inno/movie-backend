@@ -27,11 +27,6 @@ public abstract class BaseAuditingEntity implements Serializable {
   @Column(updatable = false)
   protected Timestamp createdAt;
   protected Timestamp updatedAt;
-  @Id
-  @GeneratedValue(generator = "uuid")
-  @GenericGenerator(name = "uuid", strategy = "uuid2")
-  @Column(name = "id", columnDefinition = "VARCHAR(36)", insertable = false, updatable = false, nullable = false)
-  private String id;
 
   @PrePersist
   public void onPrePersist() {

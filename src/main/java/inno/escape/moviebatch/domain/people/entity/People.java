@@ -15,6 +15,10 @@ import javax.persistence.*;
 @Entity(name = "people")
 public class People extends BaseAuditingEntity {
 
+    @Id
+    @Column(name = "id", columnDefinition = "VARCHAR(36)", updatable = false, nullable = false)
+    private String id;
+
     @Column(name = "korea_name")
     private String koreaName;
 
