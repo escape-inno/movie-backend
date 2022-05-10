@@ -28,13 +28,12 @@ dependencies {
     // web
     implementation 'org.springframework.boot:spring-boot-starter-webflux'
 
-    // batch
-    implementation 'org.springframework.boot:spring-boot-starter-batch'
+    // quartz
     implementation 'org.springframework.boot:spring-boot-starter-quartz'
 
     // db
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-    runtimeOnly 'com.h2database:h2:1.4.198'
+    compileOnly 'com.h2database:h2:1.4.198'
     runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
 
     // mapstruct
