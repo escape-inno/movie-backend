@@ -28,8 +28,7 @@ dependencies {
     // web
     implementation 'org.springframework.boot:spring-boot-starter-webflux'
 
-    // batch
-    implementation 'org.springframework.boot:spring-boot-starter-batch'
+    // quartz
     implementation 'org.springframework.boot:spring-boot-starter-quartz'
 
     // db

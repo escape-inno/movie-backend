@@ -1,24 +1,24 @@
-package inno.escape.moviebatch.global.batch.tasklets;
+package inno.escape.moviebatch.global.scheduler;
 
 import inno.escape.moviebatch.domain.company.dto.list.CompanyListRequestDto;
 import inno.escape.moviebatch.domain.company.service.CompanyService;
 import inno.escape.moviebatch.global.Constants;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.batch.core.StepContribution;
-import org.springframework.batch.core.scope.context.ChunkContext;
-import org.springframework.batch.core.step.tasklet.Tasklet;
-import org.springframework.batch.repeat.RepeatStatus;
+import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Service;
 
 @RequiredArgsConstructor
+@Service
 @Slf4j
-public class CompanyTasklet implements Tasklet {
+public class CompanyScheduler implements SchedulerService {
 
   private final CompanyService companyService;
   private int page = 1;
 
+  @Scheduled(cron = "0 2 0 * * *")
   @Override
-  public RepeatStatus execute(StepContribution contribution, ChunkContext chunkContext) {
+  public void run() {
     log.debug("Executed getCompanies Task");
 
     CompanyListRequestDto dto = CompanyListRequestDto.builder()
@@ -30,7 +30,13 @@ public class CompanyTasklet implements Tasklet {
     page += 1;
 
     companyService.getCompanies(dto);
+  }
 
-    return RepeatStatus.FINISHED;
+  @Override
+  public void register() {
+  }
+
+  @Override
+  public void remove() {
   }
 }

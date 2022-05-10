@@ -1,6 +1,8 @@
-package inno.escape.moviebatch.global.batch.schedulers;
+package inno.escape.moviebatch.global.scheduler;
 
 public interface SchedulerService {
+
+  void run();
 
   void register();
 
