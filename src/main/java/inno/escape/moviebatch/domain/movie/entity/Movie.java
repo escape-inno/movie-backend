@@ -23,9 +23,6 @@ public class Movie extends BaseAuditingEntity {
     @JoinColumn(name = "director_id")
     private People people;
 
-    @Column(name = "company_id")
-    private String companyId;
-
     @OneToOne
     @JoinColumn(name = "company_id")
     private Company company;
