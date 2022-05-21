@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Data
-public class CompanyInfo implements Serializable {
+public class CompanyInfoDto implements Serializable {
 
   private static final long serialVersionUID = 2418529724200009706L;
 

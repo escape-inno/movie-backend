@@ -2,12 +2,15 @@ package inno.escape.moviebatch.domain.people.entity;
 
 import inno.escape.moviebatch.domain.movie.entity.Filmo;
 import inno.escape.moviebatch.global.model.entity.BaseAuditingEntity;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import javax.persistence.*;
 
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
@@ -16,8 +19,8 @@ import javax.persistence.*;
 public class People extends BaseAuditingEntity {
 
     @Id
-    @Column(name = "id", columnDefinition = "VARCHAR(36)", updatable = false, nullable = false)
-    private String id;
+    @Column(name = "code", columnDefinition = "VARCHAR(36)", updatable = false, nullable = false)
+    private String code;
 
     @Column(name = "korea_name")
     private String koreaName;

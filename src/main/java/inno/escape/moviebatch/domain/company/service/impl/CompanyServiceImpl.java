@@ -1,10 +1,10 @@
 package inno.escape.moviebatch.domain.company.service.impl;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import inno.escape.moviebatch.domain.company.dto.info.CompanyInfo;
+import inno.escape.moviebatch.domain.company.dto.info.CompanyInfoDto;
 import inno.escape.moviebatch.domain.company.dto.info.CompanyInfoRequestDto;
 import inno.escape.moviebatch.domain.company.dto.info.CompanyInfoResponseDto;
-import inno.escape.moviebatch.domain.company.dto.list.CompanyList;
+import inno.escape.moviebatch.domain.company.dto.list.CompanyListDto;
 import inno.escape.moviebatch.domain.company.dto.list.CompanyListRequestDto;
 import inno.escape.moviebatch.domain.company.dto.list.CompanyListResponseDto;
 import inno.escape.moviebatch.domain.company.entity.Company;
@@ -37,7 +37,7 @@ public class CompanyServiceImpl implements CompanyService {
             URL_PATH.COMPANY_LIST.getValue(), listValueMap)
         .bodyToMono(CompanyListResponseDto.class);
 
-    List<CompanyList> ds = Objects.requireNonNull(companyListResponseDtoMono.block())
+    List<CompanyListDto> ds = Objects.requireNonNull(companyListResponseDtoMono.block())
         .getCompanyListResult().getCompanyList();
 
     List<Company> es = CompanyListMapper.INSTANCE.toEntityList(ds);
@@ -54,7 +54,7 @@ public class CompanyServiceImpl implements CompanyService {
             URL_PATH.COMPANY_INFO.getValue(), infoValueMap)
         .bodyToMono(CompanyInfoResponseDto.class);
 
-    CompanyInfo d = Objects.requireNonNull(companyInfoResponseDtoMono.block())
+    CompanyInfoDto d = Objects.requireNonNull(companyInfoResponseDtoMono.block())
         .getCompanyInfoResult().getCompanyInfo();
 
     Company e = CompanyInfoMapper.INSTANCE.toEntity(d);
