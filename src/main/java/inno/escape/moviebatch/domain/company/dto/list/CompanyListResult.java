@@ -16,7 +16,7 @@ public class CompanyListResult implements Serializable {
 
   private int totCnt;
 
-  private List<CompanyList> companyList;
+  private List<CompanyListDto> companyList;
 
   private String source;
 }

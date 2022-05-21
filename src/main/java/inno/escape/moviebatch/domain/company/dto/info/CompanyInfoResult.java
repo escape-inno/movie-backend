@@ -13,7 +13,7 @@ public class CompanyInfoResult implements Serializable {
 
   private static final long serialVersionUID = 8136466563790787613L;
 
-  private CompanyInfo companyInfo;
+  private CompanyInfoDto companyInfo;
 
   private String source;
 }

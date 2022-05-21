@@ -13,5 +13,5 @@ public class WeeklyBoxOfficeResponseDto implements Serializable {
 
   private static final long serialVersionUID = 9178142528868970022L;
 
-  private WeeklyBoxOfficeResult boxOfficeResult;
+  private WeeklyBoxOfficeResultDto boxOfficeResult;
 }

@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Data
-public class BoxOfficeResult implements Serializable {
+public class BoxOfficeResultDto implements Serializable {
 
   private static final long serialVersionUID = 8446102317673471251L;
 

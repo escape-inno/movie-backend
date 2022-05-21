@@ -1,10 +1,10 @@
 package inno.escape.moviebatch.domain.boxoffice.service.impl;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import inno.escape.moviebatch.domain.boxoffice.dto.BoxOfficeResult;
+import inno.escape.moviebatch.domain.boxoffice.dto.BoxOfficeResultDto;
 import inno.escape.moviebatch.domain.boxoffice.dto.daily.DailyBoxOfficeRequestDto;
 import inno.escape.moviebatch.domain.boxoffice.dto.daily.DailyBoxOfficeResponseDto;
-import inno.escape.moviebatch.domain.boxoffice.dto.daily.DailyBoxOfficeResult;
+import inno.escape.moviebatch.domain.boxoffice.dto.daily.DailyBoxOfficeResultDto;
 import inno.escape.moviebatch.domain.boxoffice.dto.weekly.WeeklyBoxOfficeRequestDto;
 import inno.escape.moviebatch.domain.boxoffice.dto.weekly.WeeklyBoxOfficeResponseDto;
 import inno.escape.moviebatch.domain.boxoffice.entity.BoxOffice;
@@ -38,11 +38,11 @@ public class BoxOfficeServiceImpl implements BoxOfficeService {
     Mono<DailyBoxOfficeResponseDto> dailyBoxOfficeResponseDtoMono = WebClientUtil.getResponseSpec(
         URL_PATH.DAILY.getValue(), dailyValueMap).bodyToMono(DailyBoxOfficeResponseDto.class);
 
-    DailyBoxOfficeResult dailyBoxOfficeResult = Objects.requireNonNull(
+    DailyBoxOfficeResultDto dailyBoxOfficeResult = Objects.requireNonNull(
         dailyBoxOfficeResponseDtoMono.block()).getBoxOfficeResult();
 
     String showRange = dailyBoxOfficeResult.getShowRange().split("~")[0];
-    List<BoxOfficeResult> ds = dailyBoxOfficeResult.getDailyBoxOfficeList();
+    List<BoxOfficeResultDto> ds = dailyBoxOfficeResult.getDailyBoxOfficeList();
 
     List<BoxOffice> es = BoxOfficeMapper.INSTANCE.toEntityList(ds);
     for (int i = 0; i < es.size(); i++) {

@@ -1,6 +1,6 @@
 package inno.escape.moviebatch.domain.boxoffice.dto.daily;
 
-import inno.escape.moviebatch.domain.boxoffice.dto.BoxOfficeResult;
+import inno.escape.moviebatch.domain.boxoffice.dto.BoxOfficeResultDto;
 import java.io.Serializable;
 import java.util.List;
 import lombok.AccessLevel;
@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Data
-public class DailyBoxOfficeResult implements Serializable {
+public class DailyBoxOfficeResultDto implements Serializable {
 
   private static final long serialVersionUID = 9003651971396355972L;
 
@@ -19,5 +19,5 @@ public class DailyBoxOfficeResult implements Serializable {
 
   private String showRange;
 
-  private List<BoxOfficeResult> dailyBoxOfficeList;
+  private List<BoxOfficeResultDto> dailyBoxOfficeList;
 }

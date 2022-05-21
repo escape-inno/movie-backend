@@ -13,6 +13,6 @@ public class PeopleListResponseDto implements Serializable {
 
     private static final long serialVersionUID = -878314240138081295L;
 
-    private PeopleListResult peopleListResult;
+    private PeopleListResultDto peopleListResult;
 
 }
